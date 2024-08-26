@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class ConnectToServer : MonoBehaviourPunCallbacks
 {
     public string sceneName;
+    public TextMeshProUGUI playerName;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +21,7 @@ public class ConnectToServer : MonoBehaviourPunCallbacks
     }
     public void JoinLobby()
     {
+        PhotonNetwork.NickName = playerName.text;
         PhotonNetwork.JoinLobby();
     }
     public override void OnJoinedLobby()
