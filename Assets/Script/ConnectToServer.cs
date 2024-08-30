@@ -28,6 +28,7 @@ public class ConnectToServer : MonoBehaviourPunCallbacks
     {
         Debug.Log("Lobby joined");
         SceneManager.LoadScene(sceneName);
+        Debug.Log(PhotonNetwork.CurrentLobby.Name);
     }
 
 }

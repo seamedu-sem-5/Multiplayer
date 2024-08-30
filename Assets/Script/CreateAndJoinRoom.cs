@@ -10,7 +10,10 @@ public class CreateAndJoinRoom : MonoBehaviourPunCallbacks
 {
     public TextMeshProUGUI roomName;
     public string sceneName;
-    public GameObject roomPanelPrefab;
+    public RoomListing roomListing;
+    public GameObject scrollView;
+
+    public List<RoomListing> listingList = new List<RoomListing>();
     public void CreateOrJoinRoom()
     {
         //PhotonNetwork.CreateRoom(createRoomName.text);
@@ -25,6 +28,7 @@ public class CreateAndJoinRoom : MonoBehaviourPunCallbacks
             IsVisible = true,
             MaxPlayers = 4
         };
+        
         PhotonNetwork.JoinOrCreateRoom(roomName.text, roomOptions, TypedLobby.Default);
     }
     public override void OnCreatedRoom()
@@ -34,7 +38,7 @@ public class CreateAndJoinRoom : MonoBehaviourPunCallbacks
     }
     public override void OnJoinedRoom()
     {
-        //Debug.Log("Room Join in : " +  joinRoomName.text);
+        Debug.Log("Room Join in ");
         PhotonNetwork.LoadLevel(sceneName);
     }
     public override void OnCreateRoomFailed(short returnCode, string message)
@@ -47,15 +51,30 @@ public class CreateAndJoinRoom : MonoBehaviourPunCallbacks
     }
     public override void OnRoomListUpdate(List<RoomInfo> roomList)
     {
-        foreach(var info in roomList)
+        
+        foreach (var info in roomList)
         {
+            Debug.Log("RoomList Update");
+            RoomListing _roomListing = Instantiate(roomListing, scrollView.transform);
+
+            if(_roomListing != null)
+            {
+                _roomListing.SetRoomInfo(info);
+                listingList.Add(_roomListing);
+            }
+
             if(info.RemovedFromList)
             {
+                Debug.Log("Removed from List");
 
-            }
-            else
-            {
-                //var listing = Instantiate();
+                for(int i=0;i<listingList.Count;i++)
+                {
+                    if(listingList[i].roomInfo.Name == info.Name)
+                    {
+                        Destroy(listingList[i].gameObject);
+                        listingList.RemoveAt(i);
+                    }
+                }
             }
         }
     }
