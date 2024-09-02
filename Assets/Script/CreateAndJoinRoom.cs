@@ -34,12 +34,12 @@ public class CreateAndJoinRoom : MonoBehaviourPunCallbacks
     public override void OnCreatedRoom()
     {
         //Debug.Log("Room Created by the name : " + createRoomName.text);
-        //SceneManager.LoadScene(sceneName);
+        SceneManager.LoadScene(sceneName);
     }
     public override void OnJoinedRoom()
     {
         Debug.Log("Room Join in ");
-        PhotonNetwork.LoadLevel(sceneName);
+        //PhotonNetwork.LoadLevel(sceneName);
     }
     public override void OnCreateRoomFailed(short returnCode, string message)
     {

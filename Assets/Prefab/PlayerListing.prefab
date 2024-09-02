@@ -145,8 +145,9 @@ GameObject:
   - component: {fileID: 1270872661837474691}
   - component: {fileID: 430143597148423018}
   - component: {fileID: 2235402540618252628}
+  - component: {fileID: 7748155515324918953}
   m_Layer: 5
-  m_Name: PlayerPanel
+  m_Name: PlayerListing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -210,3 +211,15 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &7748155515324918953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5130498049213228402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db1f0ad621a447c4e81ee2f8f7afbca6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
