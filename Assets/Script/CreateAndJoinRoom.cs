@@ -1,3 +1,8 @@
+/*  READ ME
+ * This script allows players to create or join a Photon room,
+ * handles room creation/joining failures, updates the room list
+ * in the UI, and loads a specified scene upon successfully joining a room.
+ */
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,15 +16,16 @@ public class CreateAndJoinRoom : MonoBehaviourPunCallbacks
     public TextMeshProUGUI roomName;
     public string sceneName;
     public RoomListing roomListing;
-    public GameObject scrollView;
+    public GameObject scrollViewContent;
 
-    public List<RoomListing> listingList = new List<RoomListing>();
+    public List<RoomListing> listingList = new List<RoomListing>(); // List to keep track of room listings
+
+    // Creates or joins a room with the specified name
     public void CreateOrJoinRoom()
     {
-        //PhotonNetwork.CreateRoom(createRoomName.text);
-        if(!PhotonNetwork.IsConnected)
+        if (!PhotonNetwork.IsConnected)
         {
-            return;
+            return; // Exit if not connected to Photon
         }
 
         RoomOptions roomOptions = new RoomOptions
@@ -28,48 +34,52 @@ public class CreateAndJoinRoom : MonoBehaviourPunCallbacks
             IsVisible = true,
             MaxPlayers = 4
         };
-        
+
         PhotonNetwork.JoinOrCreateRoom(roomName.text, roomOptions, TypedLobby.Default);
     }
-    public override void OnCreatedRoom()
-    {
-        //Debug.Log("Room Created by the name : " + createRoomName.text);
-        SceneManager.LoadScene(sceneName);
-    }
+    // Called when a room is successfully joined
     public override void OnJoinedRoom()
     {
-        Debug.Log("Room Join in ");
-        //PhotonNetwork.LoadLevel(sceneName);
+        Debug.Log("Room Joined");
+        PhotonNetwork.LoadLevel(sceneName); // Load the specified scene after joining
     }
+
+    // Called when creating a room fails
     public override void OnCreateRoomFailed(short returnCode, string message)
     {
-        Debug.Log("Fail to create room");
+        Debug.Log("Failed to create room");
     }
+
+    // Called when joining a room fails
     public override void OnJoinRoomFailed(short returnCode, string message)
     {
-        Debug.Log("Fail to Join Room");
+        Debug.Log("Failed to join room");
     }
+
+    // Updates the room list in the UI
     public override void OnRoomListUpdate(List<RoomInfo> roomList)
     {
-        
         foreach (var info in roomList)
         {
             Debug.Log("RoomList Update");
-            RoomListing _roomListing = Instantiate(roomListing, scrollView.transform);
 
-            if(_roomListing != null)
+            // Instantiate a new RoomListing prefab
+            RoomListing _roomListing = Instantiate(roomListing, scrollViewContent.transform);
+
+            if (_roomListing != null)
             {
                 _roomListing.SetRoomInfo(info);
                 listingList.Add(_roomListing);
             }
 
-            if(info.RemovedFromList)
+            // Remove rooms that are no longer available
+            if (info.RemovedFromList)
             {
                 Debug.Log("Removed from List");
 
-                for(int i=0;i<listingList.Count;i++)
+                for (int i = 0; i < listingList.Count; i++)
                 {
-                    if(listingList[i].roomInfo.Name == info.Name)
+                    if (listingList[i].roomInfo.Name == info.Name)
                     {
                         Destroy(listingList[i].gameObject);
                         listingList.RemoveAt(i);
@@ -78,5 +88,4 @@ public class CreateAndJoinRoom : MonoBehaviourPunCallbacks
             }
         }
     }
-
 }

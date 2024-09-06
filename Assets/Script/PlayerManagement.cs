@@ -1,3 +1,8 @@
+/*READ ME
+ *The script maintains player listings by adding new players
+ *to the user interface and eliminating listings when players
+ *exit the room. 
+ */
 using Photon.Pun;
 using Photon.Realtime;
 using System.Collections;
@@ -12,8 +17,11 @@ public class PlayerManagement : MonoBehaviourPunCallbacks
 
     private void Awake()
     {
+        // Initialize player listings for existing players in the room
         GetCurrentRoomPlayer();
     }
+
+    // Retrieve and list current players in the room
     void GetCurrentRoomPlayer()
     {
         foreach(KeyValuePair<int,Player> playerInfo in PhotonNetwork.CurrentRoom.Players)
@@ -21,6 +29,8 @@ public class PlayerManagement : MonoBehaviourPunCallbacks
             AddPlayerListing(playerInfo.Value);
         }
     }
+
+    // Create and add a player listing to the UI
     void AddPlayerListing(Player player)
     {
         PlayerListing listing = Instantiate(playerListing,content);
@@ -31,11 +41,14 @@ public class PlayerManagement : MonoBehaviourPunCallbacks
             listingList.Add(listing);
         }
     }
+
+    // Called when a new player enters the room
     public override void OnPlayerEnteredRoom(Player newPlayer)
     {
         AddPlayerListing(newPlayer);
     }
 
+    // Called when a player leaves the room
     public override void OnPlayerLeftRoom(Player otherPlayer)
     {
         //for (int i = 0; i < listingList.Count; i++)
@@ -48,11 +61,12 @@ public class PlayerManagement : MonoBehaviourPunCallbacks
         //    }
         //}
 
+        //Find the index from the list
         int index = listingList.FindIndex(x => x.playerInfo == otherPlayer);
         if (index != -1)
         {
-            Destroy(listingList[index]);
-            listingList.RemoveAt(index);
+            Destroy(listingList[index].gameObject);// Destroy the player listing
+            listingList.RemoveAt(index);// Remove from the list
         }
     }
 }

@@ -1,3 +1,8 @@
+/* READ ME
+ * This script controls player movement in a Photon multiplayer game,
+ * handling input for walking, jumping, and camera rotation, and applies gravity.
+ * It only processes input for the local player.
+ */
 using UnityEngine;
 using Photon.Pun;
 
@@ -28,6 +33,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (view.IsMine)
         {
+            // To set the camera depth of your player to 1 so the game gives priority
             _camera.depth = 1;
             // Rotate the player based on mouse movement
             float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
