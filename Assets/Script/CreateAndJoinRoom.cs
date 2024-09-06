@@ -20,6 +20,10 @@ public class CreateAndJoinRoom : MonoBehaviourPunCallbacks
 
     public List<RoomListing> listingList = new List<RoomListing>(); // List to keep track of room listings
 
+    private void Awake()
+    {
+        PhotonNetwork.AutomaticallySyncScene = true;
+    }
     // Creates or joins a room with the specified name
     public void CreateOrJoinRoom()
     {
@@ -41,7 +45,7 @@ public class CreateAndJoinRoom : MonoBehaviourPunCallbacks
     public override void OnJoinedRoom()
     {
         Debug.Log("Room Joined");
-        PhotonNetwork.LoadLevel(sceneName); // Load the specified scene after joining
+        //PhotonNetwork.LoadLevel(sceneName); // Load the specified scene after joining
     }
 
     // Called when creating a room fails
@@ -86,6 +90,13 @@ public class CreateAndJoinRoom : MonoBehaviourPunCallbacks
                     }
                 }
             }
+        }
+    }
+    public void StartGame()
+    {
+        if(PhotonNetwork.IsMasterClient)
+        {
+            PhotonNetwork.LoadLevel(sceneName);
         }
     }
 }

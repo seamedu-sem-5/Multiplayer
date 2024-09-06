@@ -27,4 +27,9 @@ public class PlayerListing : MonoBehaviour
         playerInfo = _player;
         _playerListingText.text = playerInfo.NickName; // Display the player's nickname
     }
+    public void SetScore(Player player)
+    {
+        var result = player.CustomProperties["score"];
+        _playerListingText.text = result.ToString() + " | " + player.NickName;
+    }
 }
