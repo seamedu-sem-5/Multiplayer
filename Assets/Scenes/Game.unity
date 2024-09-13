@@ -1483,6 +1483,7 @@ MonoBehaviour:
   minXY: {x: -500, y: 0.5, z: -500}
   maxXY: {x: 500, y: 0.5, z: 500}
   numberOfCoin: 1000
+  destroyedCoinPosList: []
   scoreText: {fileID: 432178308}
   score: 0
 --- !u!4 &1337112468

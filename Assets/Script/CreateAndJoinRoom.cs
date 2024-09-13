@@ -41,6 +41,7 @@ public class CreateAndJoinRoom : MonoBehaviourPunCallbacks
 
         PhotonNetwork.JoinOrCreateRoom(roomName.text, roomOptions, TypedLobby.Default);
     }
+
     // Called when a room is successfully joined
     public override void OnJoinedRoom()
     {
