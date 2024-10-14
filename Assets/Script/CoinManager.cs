@@ -36,6 +36,10 @@ public class CoinManager : MonoBehaviour
         scoreText.text = score.ToString();
         scoreHashtable["score"] = score;
         PhotonNetwork.LocalPlayer.SetCustomProperties(scoreHashtable);
+        if(score >= GameManager.Instance.coinsToWinTheGame)
+        {
+            GameManager.Instance.GameOver();
+        }
     }
 
     private void Start()

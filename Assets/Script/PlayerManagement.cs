@@ -72,7 +72,7 @@ public class PlayerManagement : MonoBehaviourPunCallbacks
 
     public override void OnPlayerPropertiesUpdate(Player targetPlayer, ExitGames.Client.Photon.Hashtable changedProps)
     {
-        Debug.Log("OnPlayerPropertiesUpdate for " + targetPlayer.NickName);
+        //Debug.Log("OnPlayerPropertiesUpdate for " + targetPlayer.NickName);
         var currentPlayer = listingList.Find(x => x.playerInfo.NickName == targetPlayer.NickName);
         currentPlayer.SetScore(currentPlayer.playerInfo);
     }

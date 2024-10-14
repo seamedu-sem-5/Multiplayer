@@ -3,12 +3,10 @@
  * handles room creation/joining failures, updates the room list
  * in the UI, and loads a specified scene upon successfully joining a room.
  */
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 using TMPro;
-using UnityEngine.SceneManagement;
 using Photon.Realtime;
 
 public class CreateAndJoinRoom : MonoBehaviourPunCallbacks

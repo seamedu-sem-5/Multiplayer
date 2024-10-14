@@ -3,19 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\Dev\\Documents\\GitHub\\Multiplayer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D46A65ED-87AD-D2D3-0493-4CF8807E7B5A}|Assembly-CSharp.csproj|c:\\users\\dev\\documents\\github\\multiplayer\\assets\\script\\coinmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D46A65ED-87AD-D2D3-0493-4CF8807E7B5A}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\coinmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D46A65ED-87AD-D2D3-0493-4CF8807E7B5A}|Assembly-CSharp.csproj|C:\\Users\\Dev\\Documents\\GitHub\\Multiplayer\\assets\\script\\coin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D46A65ED-87AD-D2D3-0493-4CF8807E7B5A}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\coin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D46A65ED-87AD-D2D3-0493-4CF8807E7B5A}|Assembly-CSharp.csproj|C:\\Users\\Dev\\Documents\\GitHub\\Multiplayer\\assets\\script\\connecttoserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D46A65ED-87AD-D2D3-0493-4CF8807E7B5A}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\connecttoserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D46A65ED-87AD-D2D3-0493-4CF8807E7B5A}|Assembly-CSharp.csproj|C:\\Users\\Dev\\Documents\\GitHub\\Multiplayer\\assets\\script\\playerlisting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D46A65ED-87AD-D2D3-0493-4CF8807E7B5A}|Assembly-CSharp.csproj|c:\\users\\dev\\documents\\github\\multiplayer\\assets\\script\\playerlisting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D46A65ED-87AD-D2D3-0493-4CF8807E7B5A}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\playerlisting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -23,16 +11,32 @@
       "RelativeMoniker": "D:0:0:{D46A65ED-87AD-D2D3-0493-4CF8807E7B5A}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\createandjoinroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D46A65ED-87AD-D2D3-0493-4CF8807E7B5A}|Assembly-CSharp.csproj|C:\\Users\\Dev\\Documents\\GitHub\\Multiplayer\\assets\\script\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D46A65ED-87AD-D2D3-0493-4CF8807E7B5A}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D46A65ED-87AD-D2D3-0493-4CF8807E7B5A}|Assembly-CSharp.csproj|C:\\Users\\Dev\\Documents\\GitHub\\Multiplayer\\assets\\script\\playermanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D46A65ED-87AD-D2D3-0493-4CF8807E7B5A}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\playermanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D46A65ED-87AD-D2D3-0493-4CF8807E7B5A}|Assembly-CSharp.csproj|C:\\Users\\Dev\\Documents\\GitHub\\Multiplayer\\assets\\script\\roomlisting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D46A65ED-87AD-D2D3-0493-4CF8807E7B5A}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\roomlisting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D46A65ED-87AD-D2D3-0493-4CF8807E7B5A}|Assembly-CSharp.csproj|C:\\Users\\Dev\\Documents\\GitHub\\Multiplayer\\assets\\script\\scoreboardmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D46A65ED-87AD-D2D3-0493-4CF8807E7B5A}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\scoreboardmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D46A65ED-87AD-D2D3-0493-4CF8807E7B5A}|Assembly-CSharp.csproj|C:\\Users\\Dev\\Documents\\GitHub\\Multiplayer\\assets\\script\\coinmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D46A65ED-87AD-D2D3-0493-4CF8807E7B5A}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\coinmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D46A65ED-87AD-D2D3-0493-4CF8807E7B5A}|Assembly-CSharp.csproj|C:\\Users\\Dev\\Documents\\GitHub\\Multiplayer\\assets\\script\\connecttoserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D46A65ED-87AD-D2D3-0493-4CF8807E7B5A}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\connecttoserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D46A65ED-87AD-D2D3-0493-4CF8807E7B5A}|Assembly-CSharp.csproj|C:\\Users\\Dev\\Documents\\GitHub\\Multiplayer\\assets\\script\\spawnplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D46A65ED-87AD-D2D3-0493-4CF8807E7B5A}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\spawnplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D46A65ED-87AD-D2D3-0493-4CF8807E7B5A}|Assembly-CSharp.csproj|C:\\Users\\Dev\\Documents\\GitHub\\Multiplayer\\assets\\script\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D46A65ED-87AD-D2D3-0493-4CF8807E7B5A}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D46A65ED-87AD-D2D3-0493-4CF8807E7B5A}|Assembly-CSharp.csproj|C:\\Users\\Dev\\Documents\\GitHub\\Multiplayer\\assets\\script\\chatlistner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D46A65ED-87AD-D2D3-0493-4CF8807E7B5A}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\chatlistner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,101 +50,113 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PlayerMovement.cs",
-              "DocumentMoniker": "C:\\Users\\Dev\\Documents\\GitHub\\Multiplayer\\Assets\\Script\\PlayerMovement.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\PlayerMovement.cs",
-              "ToolTip": "C:\\Users\\Dev\\Documents\\GitHub\\Multiplayer\\Assets\\Script\\PlayerMovement.cs",
-              "RelativeToolTip": "Assets\\Script\\PlayerMovement.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T06:31:58.732Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Coin.cs",
-              "DocumentMoniker": "C:\\Users\\Dev\\Documents\\GitHub\\Multiplayer\\Assets\\Script\\Coin.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Coin.cs",
-              "ToolTip": "C:\\Users\\Dev\\Documents\\GitHub\\Multiplayer\\Assets\\Script\\Coin.cs",
-              "RelativeToolTip": "Assets\\Script\\Coin.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-06T06:33:14.127Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CoinManager.cs",
-              "DocumentMoniker": "C:\\Users\\Dev\\Documents\\GitHub\\Multiplayer\\Assets\\Script\\CoinManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\CoinManager.cs",
-              "ToolTip": "C:\\Users\\Dev\\Documents\\GitHub\\Multiplayer\\Assets\\Script\\CoinManager.cs",
-              "RelativeToolTip": "Assets\\Script\\CoinManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-06T05:59:14.145Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "PlayerManagement.cs",
-              "DocumentMoniker": "C:\\Users\\Dev\\Documents\\GitHub\\Multiplayer\\Assets\\Script\\PlayerManagement.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\PlayerManagement.cs",
-              "ToolTip": "C:\\Users\\Dev\\Documents\\GitHub\\Multiplayer\\Assets\\Script\\PlayerManagement.cs",
-              "RelativeToolTip": "Assets\\Script\\PlayerManagement.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEwAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-02T07:07:07.89Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PlayerListing.cs",
-              "DocumentMoniker": "C:\\Users\\Dev\\Documents\\GitHub\\Multiplayer\\Assets\\Script\\PlayerListing.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\PlayerListing.cs",
-              "ToolTip": "C:\\Users\\Dev\\Documents\\GitHub\\Multiplayer\\Assets\\Script\\PlayerListing.cs",
-              "RelativeToolTip": "Assets\\Script\\PlayerListing.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACAAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-02T06:59:30.54Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ConnectToServer.cs",
-              "DocumentMoniker": "C:\\Users\\Dev\\Documents\\GitHub\\Multiplayer\\Assets\\Script\\ConnectToServer.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\ConnectToServer.cs",
-              "ToolTip": "C:\\Users\\Dev\\Documents\\GitHub\\Multiplayer\\Assets\\Script\\ConnectToServer.cs",
-              "RelativeToolTip": "Assets\\Script\\ConnectToServer.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAlwCwAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T07:23:24.443Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "CreateAndJoinRoom.cs",
               "DocumentMoniker": "C:\\Users\\Dev\\Documents\\GitHub\\Multiplayer\\Assets\\Script\\CreateAndJoinRoom.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\CreateAndJoinRoom.cs",
               "ToolTip": "C:\\Users\\Dev\\Documents\\GitHub\\Multiplayer\\Assets\\Script\\CreateAndJoinRoom.cs",
               "RelativeToolTip": "Assets\\Script\\CreateAndJoinRoom.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAgwCsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T06:14:17.104Z"
+              "WhenOpened": "2024-10-03T19:19:07.832Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PlayerManagement.cs",
+              "DocumentMoniker": "C:\\Users\\Dev\\Documents\\GitHub\\Multiplayer\\Assets\\Script\\PlayerManagement.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\PlayerManagement.cs",
+              "ToolTip": "C:\\Users\\Dev\\Documents\\GitHub\\Multiplayer\\Assets\\Script\\PlayerManagement.cs",
+              "RelativeToolTip": "Assets\\Script\\PlayerManagement.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAcwEwAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T23:14:31.772Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PlayerListing.cs",
+              "DocumentMoniker": "C:\\Users\\Dev\\Documents\\GitHub\\Multiplayer\\Assets\\Script\\PlayerListing.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\PlayerListing.cs",
+              "ToolTip": "C:\\Users\\Dev\\Documents\\GitHub\\Multiplayer\\Assets\\Script\\PlayerListing.cs",
+              "RelativeToolTip": "Assets\\Script\\PlayerListing.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T23:14:15.763Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CoinManager.cs",
+              "DocumentMoniker": "C:\\Users\\Dev\\Documents\\GitHub\\Multiplayer\\Assets\\Script\\CoinManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\CoinManager.cs",
+              "ToolTip": "C:\\Users\\Dev\\Documents\\GitHub\\Multiplayer\\Assets\\Script\\CoinManager.cs",
+              "RelativeToolTip": "Assets\\Script\\CoinManager.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAowCQAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T23:12:40.777Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ScoreBoardManagement.cs",
+              "DocumentMoniker": "C:\\Users\\Dev\\Documents\\GitHub\\Multiplayer\\Assets\\Script\\ScoreBoardManagement.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\ScoreBoardManagement.cs",
+              "ToolTip": "C:\\Users\\Dev\\Documents\\GitHub\\Multiplayer\\Assets\\Script\\ScoreBoardManagement.cs",
+              "RelativeToolTip": "Assets\\Script\\ScoreBoardManagement.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBUAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T23:12:21.699Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SpawnPlayer.cs",
+              "DocumentMoniker": "C:\\Users\\Dev\\Documents\\GitHub\\Multiplayer\\Assets\\Script\\SpawnPlayer.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\SpawnPlayer.cs",
+              "ToolTip": "C:\\Users\\Dev\\Documents\\GitHub\\Multiplayer\\Assets\\Script\\SpawnPlayer.cs",
+              "RelativeToolTip": "Assets\\Script\\SpawnPlayer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T22:04:50.827Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "RoomListing.cs",
-              "DocumentMoniker": "C:\\Users\\Dev\\Documents\\GitHub\\Multiplayer\\Assets\\Script\\RoomListing.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\RoomListing.cs",
-              "ToolTip": "C:\\Users\\Dev\\Documents\\GitHub\\Multiplayer\\Assets\\Script\\RoomListing.cs",
-              "RelativeToolTip": "Assets\\Script\\RoomListing.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "PlayerMovement.cs",
+              "DocumentMoniker": "C:\\Users\\Dev\\Documents\\GitHub\\Multiplayer\\Assets\\Script\\PlayerMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\PlayerMovement.cs",
+              "ToolTip": "C:\\Users\\Dev\\Documents\\GitHub\\Multiplayer\\Assets\\Script\\PlayerMovement.cs",
+              "RelativeToolTip": "Assets\\Script\\PlayerMovement.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBQAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T06:13:51.125Z"
+              "WhenOpened": "2024-09-29T16:10:59.934Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ConnectToServer.cs",
+              "DocumentMoniker": "C:\\Users\\Dev\\Documents\\GitHub\\Multiplayer\\Assets\\Script\\ConnectToServer.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\ConnectToServer.cs",
+              "ToolTip": "C:\\Users\\Dev\\Documents\\GitHub\\Multiplayer\\Assets\\Script\\ConnectToServer.cs",
+              "RelativeToolTip": "Assets\\Script\\ConnectToServer.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T18:45:19.749Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ChatListner.cs",
+              "DocumentMoniker": "C:\\Users\\Dev\\Documents\\GitHub\\Multiplayer\\Assets\\Script\\ChatListner.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\ChatListner.cs",
+              "ToolTip": "C:\\Users\\Dev\\Documents\\GitHub\\Multiplayer\\Assets\\Script\\ChatListner.cs",
+              "RelativeToolTip": "Assets\\Script\\ChatListner.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAwwAwAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T07:02:35.074Z"
             }
           ]
         }

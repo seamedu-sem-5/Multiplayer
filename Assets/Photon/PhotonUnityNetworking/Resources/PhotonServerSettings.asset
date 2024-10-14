@@ -15,7 +15,7 @@ MonoBehaviour:
   AppSettings:
     AppIdRealtime: 54b26f41-b658-4af0-b418-9f7de76843f8
     AppIdFusion: 
-    AppIdChat: 54b26f41-b658-4af0-b418-9f7de76843f8
+    AppIdChat: fa2546bc-3ea8-42d5-b43d-fd1060dd0b45
     AppIdVoice: 
     AppVersion: 
     UseNameServer: 1
@@ -41,6 +41,8 @@ MonoBehaviour:
   - RespawnSpaceship
   - DestroyList
   - PositionList
+  - GameOver
+  - ChangeScene
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1
