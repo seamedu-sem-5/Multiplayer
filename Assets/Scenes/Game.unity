@@ -1340,8 +1340,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1482174058}
   m_HandleRect: {fileID: 1482174057}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.635578
+  m_Value: 1.0000002
+  m_Size: 0.6355781
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1926,7 +1926,7 @@ GameObject:
   - component: {fileID: 2098951504}
   - component: {fileID: 2098951503}
   m_Layer: 0
-  m_Name: Cube_2
+  m_Name: Cube1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
