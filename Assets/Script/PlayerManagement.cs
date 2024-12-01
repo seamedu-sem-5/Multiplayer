@@ -12,7 +12,7 @@ using UnityEngine;
 public class PlayerManagement : MonoBehaviourPunCallbacks
 {
     public Transform content;
-    public PlayerListing playerListing; 
+    public PlayerListing playerListing;
     public List<PlayerListing> listingList = new List<PlayerListing>();
 
     private void Awake()
@@ -24,7 +24,7 @@ public class PlayerManagement : MonoBehaviourPunCallbacks
     // Retrieve and list current players in the room
     void GetCurrentRoomPlayer()
     {
-        foreach(KeyValuePair<int,Player> playerInfo in PhotonNetwork.CurrentRoom.Players)
+        foreach (KeyValuePair<int, Player> playerInfo in PhotonNetwork.CurrentRoom.Players)
         {
             AddPlayerListing(playerInfo.Value);
         }
@@ -33,9 +33,9 @@ public class PlayerManagement : MonoBehaviourPunCallbacks
     // Create and add a player listing to the UI
     void AddPlayerListing(Player player)
     {
-        PlayerListing listing = Instantiate(playerListing,content);
+        PlayerListing listing = Instantiate(playerListing, content);
 
-        if(listing != null)
+        if (listing != null)
         {
             listing.SetPlayerInfo(player);
             listingList.Add(listing);

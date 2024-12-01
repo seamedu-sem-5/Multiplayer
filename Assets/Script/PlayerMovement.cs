@@ -22,19 +22,22 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
-        _camera = Camera.main;
+        _camera = GetComponentInChildren<Camera>();
 
         controller = GetComponent<CharacterController>();
         //Cursor.lockState = CursorLockMode.Locked; // Lock the cursor in the center of the screen
         view = GetComponent<PhotonView>();
+        if (!view.IsMine)
+        {
+            Destroy(GetComponent<Rigidbody>());
+            Destroy(_camera);
+        }
     }
 
     void Update()
     {
         if (view.IsMine)
         {
-            // To set the camera depth of your player to 1 so the game gives priority
-            _camera.depth = 1;
             // Rotate the player based on mouse movement
             float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
             rotationY += mouseX;

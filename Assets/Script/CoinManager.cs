@@ -21,7 +21,7 @@ public class CoinManager : MonoBehaviour
 
     private void Awake()
     {
-        if(instance == null)
+        if (instance == null)
         {
             instance = this;
         }
@@ -36,7 +36,7 @@ public class CoinManager : MonoBehaviour
         scoreText.text = score.ToString();
         scoreHashtable["score"] = score;
         PhotonNetwork.LocalPlayer.SetCustomProperties(scoreHashtable);
-        if(score >= GameManager.Instance.coinsToWinTheGame)
+        if (score >= GameManager.Instance.coinsToWinTheGame)
         {
             GameManager.Instance.GameOver();
         }
@@ -44,45 +44,17 @@ public class CoinManager : MonoBehaviour
 
     private void Start()
     {
-        if(PhotonNetwork.IsMasterClient)
+        if (PhotonNetwork.IsMasterClient)
         {
             InstantiateCoin();
         }
     }
     public void InstantiateCoin()
     {
-        randomPosList = new List<Vector3>();
-
         for (int i = 0; i < numberOfCoin; i++)
         {
             Vector3 randomPos = new Vector3(Random.Range(minXY.x, maxXY.x), 0.5f, Random.Range(minXY.z, maxXY.x));
-            randomPosList.Add(randomPos);
+            PhotonNetwork.Instantiate(coin.name, randomPos, Quaternion.identity);
         }
-        foreach (var pos in randomPosList)
-        {
-            PhotonNetwork.Instantiate(coin.name, pos, Quaternion.identity);
-        }
-    }
-
-    public float[] Vector3ListToFloatArry(List<Vector3> list)
-    {
-        float[] array = new float[list.Count*3];
-        for(int i = 0;i < list.Count;i++)
-        {
-            array[i*3] = list[i].x;
-            array[(i*3) + 1] = list[i].y;
-            array[(i*3) + 2] = list[i].z;
-        }
-        return array;
-    }
-    public List<Vector3> FloatArrayToVector3List(float[] array)
-    {
-        List<Vector3> list = new List<Vector3>();
-        for(int i = 0; i < array.Length;i+=3)
-        {
-            Vector3 vector = new Vector3(array[i], array[i+1], array[i+2]);
-            list.Add(vector);
-        }
-        return list;
     }
 }
